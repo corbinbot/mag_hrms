@@ -148,8 +148,8 @@ function login($username, $password)
 
     }
 
-    $username = filter_var($username, FILTER_SANITIZE_STRING);
-    $password = filter_var($password, FILTER_SANITIZE_STRING);
+    $username = filter_var($username);
+    $password = filter_var($password);
 
     $sql = "SELECT username, password, type FROM users WHERE username=?";
 
@@ -276,7 +276,7 @@ function get_employee_images($id)
     return $result->fetch_assoc();
 
 }
-function get_employees123()
+function get_employee()
 {
 
     $mysqli = connect();
