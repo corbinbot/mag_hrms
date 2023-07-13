@@ -276,7 +276,7 @@ function get_employee_images($id)
     return $result->fetch_assoc();
 
 }
-function get_employees()
+function get_employees123()
 {
 
     $mysqli = connect();
